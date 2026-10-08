@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 첫 페이지</title>
+    <title>Document</title>
+    <style>
+        h1 {color:aquamarine}
+        
+    </style>
 </head>
 <body>
-    <h1>아무거나</h1>
+    <h1 id="str">글자</h1>
+    <button id="bt">눌러</button>
+    <script>
+        document.querySelector('#bt').addEventListener('click', function() {
+            document.querySelector('#str').textContent='변경';
+        });
+    </script>
 </body>
 </html>
